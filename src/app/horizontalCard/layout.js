@@ -1,11 +1,10 @@
 "use client";
 
-import { Box, Image, Text, Flex, Center, Button } from "@chakra-ui/react";
+import { Box, Text, Flex, Center, Button } from "@chakra-ui/react";
 
 const HorizontalCard = () => {
   return (
     <Center h="20vh" w="100%">
-      {" "}
       {/* Centrar la tarjeta horizontalmente y ajustar la altura */}
       <Box
         maxW="100%" /* Establecer el ancho de la tarjeta en 50% */

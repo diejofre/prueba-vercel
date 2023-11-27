@@ -27,11 +27,11 @@ const Navbar = ({ materiales }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
   const uniqueTypes = [...new Set(materiales.map((material) => material.tipo))];
-  const { colors } = useTheme();
+  // const { colors } = useTheme();
 
   return (
     <Box
-      bg={useColorModeValue(colors.light.bgPrimary, colors.dark.bgPrimary)}
+      // bg={useColorModeValue(colors.light.bgPrimary, colors.dark.bgPrimary)}
       px={4}
       position="fixed" // Esta línea fija la posición de la barra de navegación
       width="100%"
