@@ -20,7 +20,15 @@ export const POST = async (req) => {
     descripcion,
   } = await req.json();
   await connectMongoDB();
-  await Material.create({ nivel, privilegios, tipo, titulo, urlImagen, urlTitulo, palabrasClave, descripcion });
+  await Material.create({
+    nivel,
+    privilegios,
+    tipo,
+    titulo,
+    urlImagen,
+    urlTitulo,
+    palabrasClave,
+    descripcion,
+  });
   return NextResponse.json({ message: "Material Created" }, { status: 201 });
 };
-
